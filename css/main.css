@@ -1,0 +1,152 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #003f5c;
+    background-color: #f4f4f4;
+}
+h1 {
+    font-style: italic;
+    text-align: left;
+}
+h2 {
+    font-style: italic;
+    text-align: left;
+    margin: 0px 0;
+}
+h3 {
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px 20;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+.header {
+    font-family: Chonburi, serif;            
+    font-size: 32px;
+    font-weight: bold;
+    color: #0d3557;
+}
+.subtitle {
+    border-top: 3px solid #f4a000;
+    width: 50px;
+    margin: 10px auto;
+}
+.intro img {
+    width: 250px;
+    border-radius: 8px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.menu button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-family: Chonburi, serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+.menu a {
+    color: white;
+}
+.menu button:nth-child(1) { background: #f4a000; }
+.menu button:nth-child(2) { background: #d44a00; }
+.menu button:nth-child(3) { background: #00796b; }
+.menu button:nth-child(4) { background: #003f5c; }
+.section {
+    padding: 20px 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#offerings { background: #f4a000; }
+#influences { background: #d44a00; }
+#about { background: #00796b; }
+#contact { background: #003f5c; }
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* CONTACT FORM */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.right-inner-container {
+  width:70%;
+  height:80%;
+  text-align:left;
+  font-family: 'Montserrat', sans-serif;
+  font-size:10px;
+}
+
+input, textarea {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+  font-size:1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:focus, textarea:focus{
+  outline:1px solid $teal;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #00b4cf;
+	background-color: #00b4cf;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  cursor:pointer;
+}
+
+button:hover {
+  opacity:0.7;
+}
+@media only screen and (max-width: 600px) {
+  .left-container{
+    display: none;
+  }
+  .lg-view {
+    display:none;  
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display:none;  
+  }
+}
+
+form p {
+  text-align:left;
+}
